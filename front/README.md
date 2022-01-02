@@ -1,7 +1,36 @@
-# Vue 3 + Vite
+# Resume Front-end
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+### Environment
+- Vite
+  - Evan You가 개발한 번들러
+  - 빌드가 엄청 빠르다
+- Vue 3.x
+- Vuetify 3 Alpha([Link](https://next.vuetifyjs.com/en/getting-started/installation))  
+  Vue3 에 맞춰 Vuetify도 Vue3를 지원하는 버전이 나옴. 알파버전이긴 하지만 써보자
+- Typescript
+  - Vite + Vue3 project 생성 후 Typescript 설정은 포팅해왔다.
+    - Typescript 추가
+      ```bash
+      npm install typescript
+      ```
+    - Typescript 설치 후 tsconfig.json 추가
+    - shims-{x}.d.ts 파일 추가
+- node 16.13.1  
+  nvm은 알아서 설치하자
+  ```bash
+  nvm install 16.13.1
+  nvm use 16.13.1
+  ```
 
-## Recommended IDE Setup
-
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+### Build
+- local  
+  ```bash
+  git clone {this repo}
+  cd {this repo}/resume-front
+  npm install
+  npm run dev
+  ```
+- build  
+  ```bash
+  npm run build
+  ```
