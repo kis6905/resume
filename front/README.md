@@ -30,6 +30,8 @@
   npm install
   npm run dev
   ```
+  http://localhost:3000 로 접속
+
 - build  
   ```bash
   npm run build
