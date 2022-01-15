@@ -9,13 +9,13 @@
           cols="3"
           class="ma-2 d-flex justify-center"
         >
-          <v-btn color="primary" @click="clickPageButton('/home')">Home</v-btn>
+          <v-btn color="primary" @click="clickPageButton('Home')">Home</v-btn>
         </v-col>
         <v-col
           cols="3"
           class="ma-2 d-flex justify-center"
         >
-          <v-btn color="primary" @click="clickPageButton('/about')">About</v-btn>
+          <v-btn color="primary" @click="clickPageButton('About')">About</v-btn>
         </v-col>
       </v-row>
       <router-view/>
@@ -25,9 +25,13 @@
 
 <script setup lang="ts">
 // import { useRoute } from "vuex"
+import { useRouter, useRoute } from 'vue-router'
 
-function clickPageButton(path: String) {
-  console.log(`move to ${path}`)
+const router = useRouter()
+
+function clickPageButton(routeName: string) {
+  console.log(`move to ${routeName}`)
+  router.push({ name: routeName })
 }
 
 </script>
