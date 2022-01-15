@@ -25,7 +25,7 @@
 
 <script setup lang="ts">
 // import { useRoute } from "vuex"
-import { useRouter, useRoute } from 'vue-router'
+import { useRouter } from 'vue-router'
 
 const router = useRouter()
 
