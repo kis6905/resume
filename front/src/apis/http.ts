@@ -1,10 +1,9 @@
-import axios, {AxiosResponse} from 'axios';
-import Person from '@/types/person';
+import axios from 'axios';
 
-const http = {
-  get: function<R> (url: string) {
-    // Promise<R> res = axios.get<R>(url)
+const http = axios.create({
+  headers: {
+    "Content-type": "application/json",
   }
-}
+})
 
 export default http
