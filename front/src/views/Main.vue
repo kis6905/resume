@@ -21,5 +21,11 @@
 </template>
 
 <script lang="ts">
+import api from '@/apis';
+import Person from '@/types/person';
+
+let res: Person = await api.person.get()
+console.log(res)
+console.log(api)
 
 </script>
