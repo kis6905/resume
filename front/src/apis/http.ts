@@ -1,10 +1,18 @@
-import axios, {AxiosResponse} from 'axios';
-import Person from '@/types/person';
+import axios from 'axios';
+import MockAdapter from 'axios-mock-adapter';
 
-const http = {
-  get: function<R> (url: string) {
-    // Promise<R> res = axios.get<R>(url)
+const http = axios.create({
+  headers: {
+    "Content-type": "application/json",
   }
-}
+})
+
+const mock = new MockAdapter(http);
+mock.onGet("/api/person").reply(200, {
+  name: '권일수',
+  nickname: 'Leaf',
+  birth: '1989-12-13',
+  imageUrl: 'https://avatars.githubusercontent.com/u/20917534?v=4',
+});
 
 export default http
