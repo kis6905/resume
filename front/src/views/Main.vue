@@ -28,4 +28,7 @@ let res: Person = await api.person.get()
 console.log(res)
 console.log(api)
 
+let updateRes: Person = await api.person.update({ name: '하하하' })
+console.log('updateRes', updateRes)
+
 </script>

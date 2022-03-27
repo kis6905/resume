@@ -1,6 +1,6 @@
 export default interface Person {
-  name: string;
-  nickname: string;
-  birth: string;
-  imageUrl: string;
+  name?: string;
+  nickname?: string;
+  birth?: string;
+  imageUrl?: string;
 }
