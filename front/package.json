@@ -6,7 +6,6 @@
     "build": "vite build",
     "dev": "vite",
     "mock": "vite --mode mock",
-    "set-env:mock": "export $(cat .mock.env | grep \"^[^#;]\" |xargs)",
     "preview": "vite preview"
   },
   "dependencies": {

@@ -24,6 +24,8 @@
 import api from '@/apis';
 import Person from '@/types/person';
 
+console.log('VITE_MOCK_MODE', import.meta.env.VITE_MOCK_MODE);
+
 let res: Person = await api.person.get()
 console.log(res)
 console.log(api)
