@@ -8,8 +8,6 @@ const http = axios.create({
   }
 });
 
-console.log('MOCK_MODE', process.env.MOCK_MODE);
-
 setupMock(new MockAdapter(http));
 
 export default http;
