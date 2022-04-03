@@ -4,10 +4,13 @@ import setupMock from './mock/setupMock';
 
 const http = axios.create({
   headers: {
-    "Content-type": "application/json",
+    'Content-type': 'application/json',
   }
 });
 
-setupMock(new MockAdapter(http));
+if (import.meta.env.VITE_MOCK_MODE === 'true') {
+  console.log('%c※ This is mock mode! ※', 'color:red; font-weight:bold; font-size:large');
+  setupMock(new MockAdapter(http));
+}
 
 export default http;

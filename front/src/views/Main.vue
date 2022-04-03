@@ -23,14 +23,15 @@
 <script lang="ts">
 import api from '@/apis';
 import Person from '@/types/person';
+import Skill from '@/types/skill';
 
-console.log('VITE_MOCK_MODE', import.meta.env.VITE_MOCK_MODE);
+const personRes: Person = await api.person.get();
+console.log('personRes', personRes);
 
-let res: Person = await api.person.get()
-console.log(res)
-console.log(api)
+const updatePersonRes: Person = await api.person.update({ id: 1, name: '하하하' });
+console.log('updatePersonRes', updatePersonRes);
 
-let updateRes: Person = await api.person.update({ name: '하하하' })
-console.log('updateRes', updateRes)
+const skillListRes: Array<Skill> = await api.skill.getList();
+console.log('skillListRes', skillListRes);
 
 </script>
