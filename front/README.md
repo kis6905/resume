@@ -32,6 +32,13 @@
   ```
   http://localhost:3000 로 접속
 
+- local - mock  
+  서버 통신을 하지 않고 mock data를 사용  
+  ```bash
+  npm run mock
+  ```
+  http://localhost:3000 로 접속
+
 - build  
   ```bash
   npm run build
