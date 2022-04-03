@@ -37,7 +37,6 @@
   ```bash
   npm run mock
   ```
-  http://localhost:3000 로 접속
 
 - build  
   ```bash
