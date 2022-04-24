@@ -25,7 +25,7 @@ export default {
     level: 3
   }],
   'post-api-skill': [{
-    skillId: 3,
+    skillId: 7,
     skillName: 'spring-webflux',
     level: 2
   }],
@@ -35,8 +35,16 @@ export default {
     level: 3
   }],
   'post-api-skill-search': [{
-    skillId: 3,
-    skillName: 'python',
+    skillId: 1,
+    skillName: 'java',
+    level: 0
+  }, {
+    skillId: 5,
+    skillName: 'spring',
+    level: 0
+  }, {
+    skillId: 9,
+    skillName: 'node',
     level: 0
   }],
 }

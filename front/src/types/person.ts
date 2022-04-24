@@ -1,7 +1,9 @@
 export default interface Person {
   id: number;
-  name?: string;
+  name: string;
   nickname?: string;
   birth?: string;
+  email?: string;
+  links?: Array<string>;
   imageUrl?: string;
 }
