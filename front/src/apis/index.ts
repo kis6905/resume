@@ -1,5 +1,7 @@
 import personApi from "./personApi";
+import skillApi from "./skillApi";
 
 export default {
-  person: personApi
+  person: personApi,
+  skill: skillApi,
 }

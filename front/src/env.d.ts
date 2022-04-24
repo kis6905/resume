@@ -1,5 +1,5 @@
 interface ImportMetaEnv {
-  readonly VITE_MOCK_MODE: boolean
+  readonly VITE_MOCK_MODE: string
 }
 
 interface ImportMeta {
